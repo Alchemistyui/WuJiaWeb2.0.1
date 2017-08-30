@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<link href="wujiaweb.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+	
+	function validateNonEmpty(inputField, helpText) {
+        // See if the input value contains any text
+        return validateRegEx(/.+/,
+          inputField.value, helpText,
+          "请输入一个值");
+      }
+	
+	function validateRegEx(regex, input, helpText, helpMessage) {
+        // See if the input data validates OK
+        if (!regex.test(input)) {
+          // The data is invalid, so set the help message and return false
+          if (helpText != null)
+            helpText.innerHTML = helpMessage;
+          return false;
+        }
+        else {
+          // The data is OK, so clear the help message and return true
+          if (helpText != null)
+            helpText.innerHTML = "";
+          return true;
+        }
+      }
+
+	
+	function validateName(inputField, helpText) {
+        // First see if the input value contains data
+        if (!validateNonEmpty(inputField, helpText))
+          return false;
+
+        // Then see if the input value is a phone number
+        return (validateRegEx(/^\d{3}\d{4}\d{4}$/,
+          inputField.value, helpText,
+          "请输入电话号码或邮箱") | validateRegEx(/^[\w\.-_\+]+@[\w-]+(\.\w{2,3})+$/,
+          inputField.value, helpText,
+          "请输入电话号码或邮箱"));
+      }
+
+	
+	function validatePassword(minLength, maxLength, inputField, helpText) {
+		return validateRegEx(new RegExp("^.{" + minLength + "," + maxLength + "}$"),
+          inputField.value, helpText,
+          "请输入介于 " + minLength + " 和 " + maxLength +
+          " 个字母长度的值");
+	}
+	
+	function check(form) {
+		if (validateName(form["name"], form["name_help"])  && validatePassword(1, 16, form["password"], form["password_help"]) ) {
+			form.submit();
+		}
+		else {
+          alert("抱歉，你的填写有问题。");
+        }
+		
+		return "location.href='filename.html'";
+
+}
+</script>
+	
+</head>
+
+<body>
+<header>
+	<nav>
+    	   <ul>
+			  <li><img src="images/logo.png" alt="吾家" id="logo"></li>
+			  <li><input type="text" placeholder="搜索"><button>搜索</button></li>
+			  <li><img src="images/head_portrait" alt="头像" id="portrait"></li>
+	          <li><img src="images/question" alt="问题" id="question"></li>
+	        
+		   </ul>
+		</nav>
+	
+</header>
+
+<div class="info">
+	<p>吾家</p>
+	<p>吾心安处即是家</p>
+	<button>注册</button>
+	<button>登录</button>
+</div>
+
+<div class="form">
+	<form method="post" action="form_action.asp" name="log_in">
+		 <p>账号: <input type="text" name="name" id="name" onblur="validateName(this, document.getElementById('name_help'))" />
+           <span id="name_help" class="help"></span></p>
+            
+         <p>密码: <input type="password" id="password" name="password" onblur="validatePassword(1, 16, this, document.getElementById('password_help'))" />
+         <span id="password_help" class="help"></span></p>
+         
+         <p><a href="wangjimima.html" id="forget">忘记密码？</a></p>
+         
+         <input type="submit" value="登录" class="submit"  onclick="check(this.form);"/>
+         <button>下载吾家APP</button>
+  	</form>
+</div>
+<footer>
+	<p>Copyright © 2017 吾家 保留一切权利。</p>
+</footer>
+</body>
+
+
+</html>

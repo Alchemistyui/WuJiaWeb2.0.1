@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>家政维修</title>
+<link href="../../wujiaweb.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../wujiaweb.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="nav_row">
+    	<div class="nav_col">   
+    	 <nav>
+    	   <ul>
+    	    <li><img src="images/logo.png" alt="吾家" id="logo"></li>
+			<li><input type="text" placeholder="搜索"><button>搜索</button></li>
+			<li><a href="xiaoquguanli.html" class="choose">小区管理</a></li>
+			<li><a href="cheweiguanli.html">车位管理</a></li>
+			<li><a href="wuyeguanli.html">物业管理</a></li>
+            <li><a href="kefuguanli.html">客服管理</a></li>
+	        <li><img src="images/head_portrait" alt="头像" id="portrait"></li>
+	        <li><img src="images/question" alt="问题" id="question"></li>
+		   </ul>
+		</nav>
+      </div>
+    </div>	
+ </header>
+ 
+  <div class="aside">
+	<ul>
+		<li><a href="#">添加小区</a></li>
+		<li><a href="#">通知公告</a></li>
+		<li><a href="#">房屋住户信息</a></li>
+		<li><a href="#" class="choose">家政维修</a></li>
+	</ul>
+</div>
+
+<div class="main">
+	<table border="1" id="yishenhe">
+       <caption>通过审核的人员</caption> 
+        <tr>
+        	<th>姓名</th>
+        	<th>性别</th>
+        	<th>所属公司</th>
+        	<th>工作内容</th>
+        	<th>手机</th>
+        </tr>
+    	<tbody></tbody>
+    </table>
+    <button onClick="setTable('yishenhe', 5, [1,2,3,4,5,6,7])">active</button>
+    
+    <table border="1" id="weishenhe">
+       <caption>待审核的人员</caption> 
+        <tr>
+        	<th>姓名</th>
+        	<th>性别</th>
+        	<th>所属公司</th>
+        	<th>工作内容</th>
+        	<th>手机</th>
+        </tr>
+    	<tbody></tbody>
+    </table>
+    <button onClick="setChangeTable('weishenhe', 5, [1,2,3,4,5,6,7], 'jiazhengshenhe.html')">active</button>
+</div>
+
+<footer>
+	<p>Copyright © 2017 吾家 保留一切权利。</p>
+</footer>
+
+
+</body>
+</html>

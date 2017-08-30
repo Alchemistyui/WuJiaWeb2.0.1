@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>车位管理</title>
+<link href="../../wujiaweb.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../../wujiaweb.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="nav_row">
+    	<div class="nav_col">   
+    	 <nav>
+    	   <ul>
+    	    <li><img src="images/logo.png" alt="吾家" id="logo"></li>
+			<li><input type="text" placeholder="搜索"><button>搜索</button></li>
+			<li><a href="xiaoquguanli.html">小区管理</a></li>
+			<li><a href="cheweiguanli.html" class="choose">车位管理</a></li>
+			<li><a href="wuyeguanli.html">物业管理</a></li>
+            <li><a href="kefuguanli.html">客服管理</a></li>
+	        <li><img src="images/head_portrait" alt="头像" id="portrait"></li>
+	        <li><img src="images/question" alt="问题" id="question"></li>
+		   </ul>
+		</nav>
+      </div>
+    </div>	
+ </header>
+ 
+  <div class="aside">
+	<ul>
+		<li><a href="#">车位信息</a></li>
+		<li><a href="#" class="choose">车辆信息</a></li>
+	</ul>
+</div>
+
+<div class="main">
+	<p>选择小区: <select name="" id=""></select>  选择区域: <select name="" id=""></select></p>
+	<table border="1" id="cheliangxinxi">
+       <caption>车辆信息</caption> 
+        <tr>
+        	<th>车牌号</th>
+        	<th>车主</th>
+        	<th>联系方式</th>
+        	<th>所属车位</th>
+        </tr>
+    	<tbody></tbody>
+    </table>
+    <button onClick="setChangeTable('weishenhe', 5, [1,2,3,4,5,6,7], 'guanlichewei.html')">active</button>
+	</div>
+<footer>
+  <p>Copyright © 2017 吾家 保留一切权利。</p>
+</footer>
+</body>
+</html>
