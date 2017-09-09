@@ -23,6 +23,7 @@ header {
 
 body{
 	height: 100%;
+	width: 1250px;
 	position: relative;
 } 
 
@@ -60,42 +61,52 @@ line-height:28px;
 border:1px solid gray;
 color:gray;
 background:#FFF;
+	padding: 0px;
 }
 
 
 
-.introduction {
-	margin: 5px;
-	padding: 10px;
+#login {
+	margin-top: 5px;
+	padding: 50px;
 	background-color: antiquewhite;
-	height: 200px;
+	height: 450px;
+	width: 1150px;
+	
 }
 
-#wujiajianjie {
-	background-image: url(images/wujiajianjie);
+#introduction {
+	background-color: aliceblue;
+	float: left;
+	width: 700px;
+	height: 400px;
 }
 
-#tingchejianjie {
-	background-image: url(images/tingchejianjie);
+
+#log, #regist {
+	margin-left: 50px;
+	float: left;
+	background-color:aqua;
+	width: 400px;
+	height: 400px;
+	text-align: center; margin:0 auto;
 }
 
-#tuoguanjianjie {
-	background-image: url(images/tuoguanjianjie);
-	float: right;
-	display: inline-block;
+#log .btntop, #regist .btntop {
+
+	margin-left: 30px;
 }
 
-#jiazhengjianjie {
-	background-image: url(images/jiazhengjianjie);
-	display: inline-block;
+#log button {
+	margin: 0 auto;
 }
 
-#tuoguanjianjie, #jiazhengjianjie {
-	width: 46%;
+#regist {
+	display: none;
 }
 
 .info {
-	margin: 50px;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -143,3 +154,84 @@ footer{
 .main {
 	margin: 0px 0px 0px 160px;
 }
+
+
+
+
+
+        #container {
+		width: 1250px;
+		height: 450px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	#list {
+		width: 7500px;
+		height: 450px;
+		left: -1250px;
+		position: absolute;
+		z-index: 1;
+	}
+	
+	#list img {
+		vertical-align: top;
+		float: left;
+	}
+	
+	#buttons { 
+		position: absolute; 
+		width: 300px; 
+		z-index: 2; 
+		bottom: 15px; 
+		margin-left: 500px;
+		
+		}
+    #buttons span { 
+			cursor: pointer;
+			float: left; 
+			border: none; 
+			width: 50px; 
+			height: 3px; 
+			border-radius: 20%; 
+			background: #D7D4D4; 
+			margin-left: 10px;
+	}
+    #buttons .on {  
+			background: #2E2E2E;
+	}
+	
+	.controll {
+		float: left;
+		margin: 0px;
+		z-index: 2;
+		cursor: pointer; 
+		cursor: pointer;
+		position: absolute;
+        display: none;
+	}
+
+    #next {
+			float: none;
+			margin-left: 1160px;
+		}
+	
+	#prev img {
+		width: 70px;
+		margin-top: 200px;
+		margin-left: 10px;
+	
+	}
+	
+	#next img {
+		width: 70px;
+		margin-top: 200px;
+		
+	}
+	
+	#container:hover .controll {
+		display: block;
+	}
+	
+
+
