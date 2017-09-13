@@ -1,13 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 html  {
-	padding: 10px;
-	margin: 0;
+	padding: 0px;
+	margin: 0 auto;
 	box-sizing: border-box;
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
 	height: 100%;
+	margin-right: 50px;
 }
 
+body {
+	padding: 0px;
+	margin: 0px;
+}
         
 
 nav {
@@ -233,5 +238,32 @@ footer{
 		display: block;
 	}
 	
+
+.intro {
+	background-color: antiquewhite;
+	width: 410px;
+	float: left;
+	margin-right: 10px;
+	height: 250px;
+	
+}
+
+#xiaohaiAd {
+	margin: 0px;
+}
+
+#links {
+	height: 50px;
+	background-color: aqua;
+	margin-top: 260px;
+}
+
+#links a {
+	display: block;
+	float: left;
+	margin-left: 150px;
+	padding-top: 15px;
+}
+
 
 
