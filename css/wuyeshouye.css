@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+  #container {
+		width: 1250px;
+		height: 450px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	#list {
+		width: 7500px;
+		height: 450px;
+		left: -1250px;
+		position: absolute;
+		z-index: 1;
+	}
+	
+	#list img {
+		vertical-align: top;
+		float: left;
+	}
+	
+	#buttons { 
+		position: absolute; 
+		width: 300px; 
+		z-index: 2; 
+		bottom: 15px; 
+		margin-left: 500px;
+		
+		}
+    #buttons span { 
+			cursor: pointer;
+			float: left; 
+			border: none; 
+			width: 50px; 
+			height: 3px; 
+			border-radius: 20%; 
+			background: #ee9147; 
+			margin-left: 10px;
+	}
+    #buttons .on {  
+			background: #EBC745;
+	}
+	
+	.controll {
+		float: left;
+		margin: 0px;
+		z-index: 2;
+		cursor: pointer; 
+		cursor: pointer;
+		position: absolute;
+        display: none;
+	}
+
+    #next {
+			float: none;
+			margin-left: 1160px;
+		}
+	
+	#prev img {
+		width: 70px;
+		margin-top: 200px;
+		margin-left: 10px;
+	
+	}
+	
+	#next img {
+		width: 70px;
+		margin-top: 200px;
+		
+	}
+	
+	#container:hover .controll {
+		display: block;
+	}
+	
+
+.intro {
+	background-color: antiquewhite;
+	margin-top: 10px;
+	width: 410px;
+	float: left;
+	margin-right: 10px;
+	height: 250px;
+	
+}
+
+.intro a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	margin: 50px;
+	font-size: 120%;
+	
+}
+
+#tingcheAd {
+	background-image: url(../images/tingchejianjie.png);
+	
+}
+
+
+
+#jiazhenAd {
+	background-image: url(../images/jiazhengjianjie.png);
+	
+}
+
+#xiaohaiAd {
+	background-image: url(../images/xiaohaijianjie.png);
+	
+	margin: 0px;
+	margin-top: 10px;
+}
+
+#links {
+	height: 50px;
+	
+	margin-top: 260px;
+}
+
+#links a {
+	display: block;
+	float: left;
+	margin-left: 150px;
+	padding-top: 15px;
+	color: #ee9147;
+	text-decoration: none;
+	
+}
+

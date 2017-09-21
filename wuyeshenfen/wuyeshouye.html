@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>首页</title>
 <link href="../css/wujiaweb.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/wuyeshouye.css">
 <script type="text/javascript" src="../js/wujiaweb.js"></script>
 </head>
 
@@ -11,10 +12,15 @@
 <header>
 	<nav>
     	   <ul>
-			  <li><img src="images/logo.png" alt="吾家" id="logo"></li>
-			  <li><input type="text" placeholder="搜索"><button>搜索</button></li>
-			  <li><img src="images/head_portrait" alt="头像" id="portrait"></li>
-	          <li><img src="images/question" alt="问题" id="question"></li>
+    	   
+			<li><a href=""><img src="../images/logo.JPG" alt="吾家" id="logo"></a></li>
+			  <li><a href=""><img src="../images/question.png" alt="问题" id="question"></a></li>
+			  <li><a href=""><img src="../images/portrait.png" alt="头像" id="portrait"></a></li> 
+            <li><a class="danghanglan" href="xiaoquguanli.html">小区管理</a></li>
+			<li><a class="danghanglan" href="cheweiguanli.html" class="choose">车位管理</a></li>
+			<li><a class="danghanglan" href="wuyeguanli.html">物业管理</a></li>
+            <li><a class="danghanglan" href="kefuguanli.html">客服管理</a></li>
+             
 	        
 		   </ul>
 		</nav>
@@ -43,15 +49,21 @@
 </div>
 
 <div class="intro" id="tingcheAd">
-	<a href="#">停车简介</a>
+	<a href="#">停车简介<br>
+	业主可根据自己的需求出租车位，为了方便管理和保障小区安全，采取车位长租的方式，租户或附近对车位有长期需求的人员则可租用业主车位。这样业主能够赚钱并且物业能够更好的利用资源。
+</a>
 </div>
 
 <div class="intro" id="jiazhenAd">
-	<a href="#">家政简介</a>
+	<a href="#">家政简介<br>
+    家政维修人员喜欢在小区里张贴小广告，引起管理的不便，但是业主需要的时候又找不到，所以将他家政维修信息整合起来，既能方便物业管理，也能方便业主寻找。	
+	</a>
 </div>
 
 <div class="intro" id="xiaohaiAd">
-	<a href="#">小孩托管简介</a>
+	<a href="#">小孩托管简介<br>
+	业主忙没空带孩子时，可以将孩子托管给其他家庭主妇，专职带孩子会更加细心呵护孩子，孩子也可以和其他孩子玩耍交朋友。同时引入实名认证，评价机制，规范定价防止出现不安全和恶性竞价情况。
+</a>
 </div>
 
 <div id="links">
@@ -61,7 +73,7 @@
 	<a href="#">服务条款</a>
 	<a href="#">使用帮助</a>
 </div>
-
+<div id="footerblank"></div>
 <footer>
 	<p>Copyright © 2017 吾家 保留一切权利。</p>
 </footer>

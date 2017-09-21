@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#login {
+	margin-top: 5px;
+	padding: 50px;
+	background-color: antiquewhite;
+	height: 450px;
+	width: 1150px;
+	
+}
+
+#introduction {
+	background-color: aliceblue;
+	float: left;
+	width: 700px;
+	height: 400px;
+}
+
+
+#log, #regist {
+	margin-left: 50px;
+	float: left;
+	background-color:aqua;
+	width: 400px;
+	height: 400px;
+	text-align: center; margin:0 auto;
+}
+
+#log .btntop, #regist .btntop {
+
+	margin-left: 30px;
+}
+
+#log button {
+	margin: 0 auto;
+}
+
+#regist {
+	display: none;
+}
