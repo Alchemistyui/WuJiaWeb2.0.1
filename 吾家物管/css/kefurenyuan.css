@@ -1,0 +1,22 @@
+div.mokuai{
+	width: 900px;
+	margin-top:50px ;
+	margin-left: 150px;
+	margin-right: 200px;
+	text-align: left;
+}
+div.mokuai table{
+	border:solid #add9c0; 
+	border-width:1px 0px 0px 1px;
+	width: 600px;
+	font-size: 20px;
+}
+div.mokuai table tr{
+	width: 500px;
+}
+div.mokuai table tr td{
+	width: 50px;
+	border:solid #add9c0; 
+	border-width:0px 1px 1px 0px; 
+	padding:10px 10px;
+}
