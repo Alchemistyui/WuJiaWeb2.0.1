@@ -1,5 +1,21 @@
+textarea {
+	padding: 0.85em 1.5em;
+	width: 150px;
+	height: 10px;
+	border: none;
+	border-radius: 2em;
+	background: #fff;
+	color: #535d92;
+	resize: none;
+}
+
+.wenben-xiao {
+	height: 10px;
+	margin: 0;
+}
+
 .shoufei-biaozhun{
-	text-align: left;
+	text-align: center;
 	font-size: 20px;
 }
 .shoufei-biaozhun select{
@@ -12,13 +28,18 @@
 }
 .shoufei-biaozhun textarea{
 	width: 300px;
-	height: 25px;
+	height: 100px;
 }
 .shoufei-biaozhun p{
 	display: inline;
 	
+	
+}
+.shoufei-biaozhun button {
+	margin-left: 100px;
 }
 textarea.wenben-henxiao{
 	width: 30px;
-	height: 25px;
+	height: 10px;
 }
+

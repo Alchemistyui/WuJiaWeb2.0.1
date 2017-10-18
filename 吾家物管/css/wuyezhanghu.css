@@ -6,14 +6,15 @@ div.xiaoqu{
 }
 div.xiaoqulogo{
 	width: 200px;
-	height: 200px;
+	height: 210px;
 	background-color:#888888 ;
 	float: left;
 }
 div.xiaoquxinxi{
+	padding-top: 10px;
 	height: 200px;
 	width: 600px;
-	background-color:#888888 ;
+	background-color:#DEDCDC ;
 	margin-left: 210px;
 }
 div.xiaoqu-jutixinxi{
@@ -32,7 +33,7 @@ div.mokuai{
 	text-align: left;
 }
 div.mokuai table{
-	border:solid #add9c0; 
+	border:solid #F08F00; 
 	border-width:1px 0px 0px 1px;
 	width: 500px;
 	font-size: 20px;
@@ -42,7 +43,7 @@ div.mokuai table tr{
 }
 div.mokuai table tr td{
 	width: 50px;
-	border:solid #add9c0; 
+	border:solid #F08F00; 
 	border-width:0px 1px 1px 0px; 
 	padding:10px 10px;
 }

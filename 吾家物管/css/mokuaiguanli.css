@@ -1,7 +1,13 @@
 .mokuaineirong{
 	text-align: left;
 	font-size: 20px;
+	margin: 0 auto;
 }
+#main {
+	margin: 0 auto;
+	margin-left: 300px;
+}
+
 .mokuaineirong select{
 	width: 100px;
 	font-size: 20px;
@@ -17,4 +23,19 @@
 .mokuaineirong p{
 	display: inline;
 	
+}
+.mokuaineirong select {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	text-align: left;
+	background: #fff;
+	z-index: 100;
+	width: 150px;
+	height: 35px;
+	max-width: 500px;
+	background: transparent;
+	font-size: 1em;
+	font-weight: 700;
+	color: #CB6900;
 }

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+
 html  {
 	padding: 0px;
 	margin: 0 auto;
@@ -31,7 +32,12 @@ main{
 	font-family:"黑体";
 	font-size: 13px;
 }
-        
+  
+a {
+	text-decoration: none;
+	color: #E16C00;
+}
+
 nav ul li img {
 	width: 40px;
 }
@@ -137,6 +143,17 @@ background:#FFF;
 	height: 50px;
 }
 
+textarea {
+	padding: 0.85em 1.5em;
+	width: 150px;
+	height: 10px;
+	border: none;
+	border-radius: 2em;
+	background: #fff;
+	color: #535d92;
+	resize: none;
+}
+
 
 footer{
 	margin-top: 0px;
@@ -166,13 +183,7 @@ footer{
 	margin: 0px 0px 0px 160px;
 }
 
-.submit, .download {
-	border:1px solid #d2a000;
-box-shadow: 0 1px 2px #fedd71 inset,0 -1px 0 #a38b39 inset,0 -2px 3px #fedd71 inset;
-background: -webkit-linear-gradient(top,#fece34,#ee9147);
-background: -moz-linear-gradient(top,#fece34,#d8a605);
-background: linear-gradient(top,#fece34,#d8a605);
-}
+
 
 
 

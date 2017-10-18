@@ -6,7 +6,7 @@ div.mokuai{
 	text-align: left;
 }
 div.mokuai table{
-	border:solid #add9c0; 
+	border:solid #F08F00; 
 	border-width:1px 0px 0px 1px;
 	width: 1000px;
 	font-size: 20px;
@@ -16,7 +16,7 @@ div.mokuai table tr{
 }
 div.mokuai table tr td{
 	width: 50px;
-	border:solid #add9c0; 
+	border:solid #F08F00; 
 	border-width:0px 1px 1px 0px; 
 	padding:10px 10px;
 }
@@ -25,5 +25,18 @@ div.mokuai h3{
 }
 .dibu-anniu{
 	margin-top:30px ;
-	margin-left: 900px;
+	margin-left: 0px;
 }
+
+.mokuai select {
+	height: 30px;
+	width: 100px;
+	text-align: center;
+	font-size: 20px;
+	padding: 0 0 0 50px;
+}
+
+.mokuai select option {
+	padding: 0 0 0 50px;
+}
+
